@@ -1,0 +1,11 @@
+name: First Worflow
+#Define the envs that trigger the action
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print GodBay
+        run: echo "Done - bye"
